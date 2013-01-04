@@ -22,8 +22,8 @@
 
 @implementation AISampleNavItemLayoutView
 
-#if !(__has_feature(objc_arc))
 - (void)dealloc {
+#if !(__has_feature(objc_arc))
 	[_titleLabel release];
 	_titleLabel = nil;
 	[_subtitleLabel release];
@@ -34,10 +34,12 @@
 	_title = nil;
 	[_subtitle release];
 	_subtitle = nil;
+	[_image release];
+	_image = nil;
 	
 	[super dealloc];
-}
 #endif
+}
 
 - (id)initWithFrame:(CGRect)frame
 {

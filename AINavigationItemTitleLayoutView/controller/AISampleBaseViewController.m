@@ -15,16 +15,16 @@
 
 @implementation AISampleBaseViewController
 
-#if !(__has_feature(objc_arc))
 - (void)dealloc {
+#if !(__has_feature(objc_arc))
 	[_subtitle release];
 	_subtitle = nil;
 	[_titleImage release];
 	_titleImage = nil;
 	
 	[super dealloc];
-}
 #endif
+}
 
 - (void)viewDidLoad
 {
