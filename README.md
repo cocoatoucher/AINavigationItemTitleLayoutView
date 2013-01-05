@@ -36,3 +36,4 @@ Add the AINavigationItemTitleLayoutView folder to your project
         [super layoutViewToCenter:self.subview2];
     }
     
+![Screenshot](http://f.cl.ly/items/071h2K3G1o1a1p171p2k/Screen%20Shot%202013-01-04%20at%205.46.50%20PM.png)
